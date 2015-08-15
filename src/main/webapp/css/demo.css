@@ -1,0 +1,38 @@
+body {
+	background-color: #fafafa;
+}
+div.demo-block {
+	min-height: 400px;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+div.big {
+	padding-top: 50px !important;
+}
+
+.links {
+    margin: 0 auto;
+    z-index: 20;
+}
+
+.top-buffer {
+	margin-top: 20px;
+}
+
+.left-block {
+	float: left;
+}
+
+.right-block {
+	float: right;
+}
+
+.panel-footer {
+	overflow: hidden;
+}
+
+.data-ace {
+	width: 100%;
+}

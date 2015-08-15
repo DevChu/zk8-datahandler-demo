@@ -1,0 +1,26 @@
+<zk xmlns:ca="client/attribute" xmlns:w="http://www.zkoss.org/2005/zk/client" xmlns:n="native">
+    <style src="./css/bootstrap-btn.css" />
+    <style src="./css/demo-introjs.css" />
+    <script src="./js/bootstrap.min.js" />
+    <div class="container">
+        <button class="btn btn-default" label="Start!" w:onClick="introJs().start();" />
+    </div>
+    <div class="container" ca:data-introjs="">
+        <div class="top-buffer" ca:data-step="1" ca:data-intro="Ok, wasn't that fun?">
+            <n:h4>Chapter 1</n:h4>
+            orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        </div>
+        <div class="top-buffer" ca:data-step="2" ca:data-intro="Funny :D" ca:data-position="top">
+            <n:h4>Chapter 2</n:h4>
+            orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        </div>
+        <div class="top-buffer" ca:data-step="3" ca:data-intro="Really? Thanks!" ca:data-position="bottom">
+            <n:h4>Chapter 3</n:h4>
+            orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        </div>
+        <div class="top-buffer" ca:data-step="4" ca:data-intro="Wow! That's great!">
+            <n:h4>Chapter 4</n:h4>
+            orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        </div>
+    </div>
+</zk>

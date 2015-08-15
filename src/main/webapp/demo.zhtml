@@ -1,0 +1,448 @@
+<html xmlns="native" xmlns:x="xhtml" xmlns:zk="zk" xmlns:ca="client/attribute" xmlns:z="zul">
+    <head>
+        <meta content="ZK8 Data Handler: Powerful" name="description"/>
+        <meta content="ZK, JQuery, ZK MVVM, ZK Data Handler, Java, DataBinding, Bootstrap" name="keywords"/>
+        <meta charset="utf-8" />
+        <title>ZK Data Handler Demo</title>
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.zkoss.org/img/favicon.ico"/>
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/demo.css" />
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/jquery.scrollTo.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/jquery.ascensor.min.js"></script>
+        <script src="./js/demo.js"></script>
+    </head>
+    <body>
+        <div id="demo">
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">jQuery Mask Plugin</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Example</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:textbox id="mask" ca:data-mask="00:00:00"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Change Mask Format</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:button label="00:00:00" type="button" class="btn btn-default" onClick='mask.setClientDataAttribute("mask", "00:00:00")'/>
+                                    <z:button label="00_00_00" type="button" class="btn btn-default" onClick='mask.setClientDataAttribute("mask", "00_00_00")'/>
+                                    <z:button label="00/00/0000" type="button" class="btn btn-default" onClick='mask.setClientDataAttribute("mask", "0000/00/00")'/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-mask" target="_blank">ZK8 Data Handler: mask</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="http://igorescobar.github.io/jQuery-Mask-Plugin/" target="_blank">jQuery-Mask-Plugin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Syntax Highlight</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Input</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:textbox id="code_syntax_highlight-input" width="370px" rows="10" value="var a = 0;" onChanging="code_syntax_highlight.setValue(event.value)" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Output (syntax-highlight)</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:label id="code_syntax_highlight" ca:data-syntax-highlight="" multiline="true" pre="true">var a = 0;
+                                    </z:label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-syntax-highlight" target="_blank">ZK8 Data Handler: syntax-highlight</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="https://highlightjs.org/" target="_blank">highlight.js</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Ace Code Editor</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Example</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:textbox id="ace" ca:data-ace-code-editor="{theme:'ace/theme/twilight', mode:'ace/mode/javascript'}" multiline="true"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-ace-code-editor" target="_blank">ZK8 Data Handler: ace-code-editor</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="http://ace.c9.io/" target="_blank"> Ace</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Markdown</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Input</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:textbox width="370px" rows="20" onChanging="md.setValue(event.value)" value="#Markdown Demo"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Output (markdown)</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:label id="md" ca:data-markdown="" multiline="true">#Markdown Demo</z:label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-markdown" target="_blank">ZK8 Data Handler: markdown</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="https://github.com/showdownjs/showdown" target="_blank"> showdown</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Kendo Combobox</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Example</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <zk:zscript><![CDATA[
+                                        import org.zkoss.zul.ListModelList;
+                                        String[] userNamesA = { "Apple", "Banana", "Orange"};
+                                        ListModelList modelA = new ListModelList(userNamesA);
+                                        public void addOpt(String opt) {
+                                           modelA.add(opt);
+                                        }
+                                    ]]></zk:zscript>
+                                    <z:selectbox id="kc" model="${modelA}" ca:data-kendo-combobox="true">
+                                        <z:template name="modelA">Name is ${each}</z:template>
+                                    </z:selectbox>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Add New Option</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <div class="input-group">
+                                        <z:textbox id="newopt" class="form-control" cols="15"/>
+                                        <span class="input-group-btn">
+                                            <z:button class="btn btn-default" label="Add" onClick="addOpt(newopt.getValue()); kc.invalidate();"/>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-kendo-combobox" target="_blank">ZK8 Data Handler: kendo-combobox</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="http://demos.telerik.com/kendo-ui/combobox/index" target="_blank"> Kendo UI ComboBox</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">jQuery UI Datepicker</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Example</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:textbox id="dp" ca:data-datepicker="{dateFormat: 'yy-mm-dd'}" cols="40"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Change Date Format</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <zk:zscript><![CDATA[
+                                        public void updateDatepickerFormat(Component comp, String format) {
+                                            if (format.length() != 0) {
+                                                comp.setClientDataAttribute("datepicker", "{dateFormat: '" + format + "'}");
+                                                comp.setValue("");
+                                            }
+                                        }
+                                    ]]></zk:zscript>
+                                    <z:listbox onSelect='updateDatepickerFormat(dp, self.selectedItem.label)' mold="select" tabindex="8">
+                                        <z:listitem label="yy-mm-dd" value="yy-mm-dd" />
+                                        <z:listitem label="d M, y" value="d M, y" />
+                                        <z:listitem label="DD, d MM, yy" value="DD, d MM, yy" />
+                                    </z:listbox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-datepicker" target="_blank">ZK8 Data Handler: datepicker</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="https://jqueryui.com/datepicker/" target="_blank"> Datepicker</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Sticky-Kit</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Example</h3>
+                                    <z:iframe class="top-buffer" src="./sticking.zul" width="650px" height="400px"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-sticking" target="_blank">ZK8 Data Handler: sticking</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="http://leafo.net/sticky-kit/" target="_blank"> Sticky-Kit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block big">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Vaadin v-grid</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="row top-buffer">
+                                    <z:iframe class="top-buffer" src="./vaadin-vgrid.zul" width="100%" height="600px"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-v-grid" target="_blank">ZK8 Data Handler: v-grid</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="http://vaadin.github.io/components-examples/" target="_blank"> Vaadin Components</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Easy Pie Chart</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="row top-buffer">
+                                    <h3 class="panel-title">Example</h3>
+                                </div>
+                                <div class="row top-buffer">
+                                    <z:div apply="org.zkoss.bind.BindComposer, org.zkoss.zkdatahandlerdemo.EasyPieChartComposer" viewModel="@id('evm') @init('org.zkoss.zkdatahandlerdemo.EasyPieChartVM')" >
+                                        <z:div id="epc">33%</z:div>
+                                        <z:button class="btn btn-default top-buffer" label="Update Pie Chart" onClick="@command('update')"/>
+                                    </z:div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/ atahandler-easypiechart" target="_blank">ZK8 Data Handler: easypiechart</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="http://rendro.github.io/easy-pie-chart/" target="_blank"> easy pie chart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block big">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">DhtmlxScheduler</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="row top-buffer">
+                                    <z:iframe class="top-buffer" src="./dhtmlxscheduler.zul" width="100%" height="600px"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-dhtmlxscheduler" target="_blank">ZK8 Data Handler: dhtmlxscheduler</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="http://dhtmlx.com/docs/products/dhtmlxScheduler/" target="_blank"> DhtmlxScheduler</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row demo-block">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Introjs</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="row top-buffer">
+                                    <z:iframe class="top-buffer" src="./introjs.zul" width="100%" height="500px"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="col-md-6">
+                                <span class="label label-primary">Source Code (GitHub)</span>
+                                <a href="https://github.com/DevChu/zk8-datahandler/tree/master/datahandler-intro" target="_blank">ZK8 Data Handler: intro</a>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="label label-default">Reference</span>
+                                <a href="http://usablica.github.io/intro.js/" target="_blank"> Introjs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse links">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">ZK8 Data Handler Demo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Input <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="page-nav-btn0" href="#">jQuery Mask Plugin</a></li>
+                                <li><a id="page-nav-btn1" href="#">Syntax Highlight</a></li>
+                                <li><a id="page-nav-btn2" href="#">Ace Code Editor</a></li>
+                                <li><a id="page-nav-btn3" href="#">Markdown</a></li>
+                                <li><a id="page-nav-btn4" href="#">Kendo Combobox</a></li>
+                                <li><a id="page-nav-btn5" href="#">jQuery UI Datepicker</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Layout <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="page-nav-btn6" href="#">Sticky-Kit</a></li>
+                                <li><a id="page-nav-btn7" href="#">Vaadin vgrid</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="page-nav-btn8" href="#">easy pie chart</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Scheduling <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="page-nav-btn9" href="#">dhtmlxschduler</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interaction <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="page-nav-btn10" href="#">Introjs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>

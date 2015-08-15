@@ -1,0 +1,15 @@
+.sticking-demo {
+	overflow: hidden;
+}
+
+.sticking-demo .main {
+	float: left;
+	width: 350px;
+	height: 600px;
+	overflow: hidden;
+}
+
+.sticking-demo .sticky-part {
+	float: left;
+	overflow: hidden;
+}

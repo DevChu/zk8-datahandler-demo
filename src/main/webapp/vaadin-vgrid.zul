@@ -1,0 +1,27 @@
+<zk xmlns:n="native" xmlns:ca="client/attribute" xmlns:x="xhtml">
+    <style src="./css/bootstrap-btn.css" />
+    <script src="./js/bootstrap.min.js" />
+    <div viewModel="@id('vm') @init('org.zkoss.zkdatahandlerdemo.VGridVM')" >
+        <div ca:data-v-grid="{mode:'multi'}" >
+            <n:table>
+                <n:colgroup>
+                    <n:col header-text="#" width="70"/>
+                    <n:col header-text="First Name" width="150"/>
+                    <n:col header-text="Last Name" width="150"/>
+                    <n:col header-text="Email" flex="1"/>
+                </n:colgroup>
+                <x:tbody>
+                    <forEach items="@load(vm.users)" varStatus="status">
+                        <x:tr>
+                            <n:td><label value="${status.index + 1}"/></n:td>
+                            <n:td><label value="@init(each.firstName)"/></n:td>
+                            <n:td><label value="@init(each.lastName)"/></n:td>
+                            <n:td><label value="@init(each.email)"/></n:td>
+                        </x:tr>
+                    </forEach>
+                </x:tbody>
+            </n:table>
+        </div>
+        <button class="btn btn-default" label="add User" onClick="@command('addUser')" />
+    </div>
+</zk>
