@@ -5,9 +5,9 @@
         <div ca:data-v-grid="{mode:'multi'}" >
             <n:table>
                 <n:colgroup>
-                    <n:col header-text="#" width="70"/>
-                    <n:col header-text="First Name" width="150"/>
-                    <n:col header-text="Last Name" width="150"/>
+                    <n:col header-text="#" width="60"/>
+                    <n:col header-text="First Name" width="110"/>
+                    <n:col header-text="Last Name" width="110"/>
                     <n:col header-text="Email" flex="1"/>
                 </n:colgroup>
                 <x:tbody>

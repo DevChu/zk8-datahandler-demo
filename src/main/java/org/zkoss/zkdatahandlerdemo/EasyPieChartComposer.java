@@ -4,6 +4,7 @@ import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
 import org.zkoss.zk.ui.select.annotation.Wire;
+import org.zkoss.zk.ui.util.Clients;
 import org.zkoss.zul.*;
 
 import java.util.LinkedList;
@@ -22,4 +23,9 @@ public class EasyPieChartComposer extends SelectorComposer<Component>{
         epc.setClientDataAttribute("size", "100");
         epc.setClientDataAttribute("percent", "33");
 	}
+    
+    @Listen("onClick = #do")
+    public void doSth () {
+        Clients.sendClientCommand(epc, "easypiechart$clientUpdate", "abc");
+    }
 }
